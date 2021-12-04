@@ -1,2 +1,14 @@
+from graphical_grazer.graph import Graph
+
+
 def main():
-    print("Hello, World!")
+    g = Graph()
+    for i in range(1, 40):
+        g.clear_nodes()
+        g.visit(i)
+    print(g.graph.values())
+    print(len(g.graph))
+
+
+if __name__ == "__main__":
+    main()

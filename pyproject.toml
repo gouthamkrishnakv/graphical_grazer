@@ -8,7 +8,8 @@ authors = ["Goutham Krishna K V <gauthamkrishna9991@live.com>"]
 python = "^3.10"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+pytest = "^6.2.5"
+black = {version = "^21.11b1", allow-prereleases = true}
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
