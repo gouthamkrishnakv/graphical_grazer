@@ -4,27 +4,27 @@ from graphical_grazer.node import Node
 
 
 class Graph:
-    graph: Dict[int, Node]
+    vertices: Dict[int, Node]
 
     def __init__(self) -> None:
-        self.graph = {}
+        self.vertices = {}
 
     def clear_nodes(self):
-        for i in self.graph.values():
+        for i in self.vertices.values():
             i.visited = False
             i.next_ele = None
 
     def visit(self, ele: int):
-        if ele not in self.graph:
-            self.graph[ele] = Node(ele)
-        if self.graph[ele].visited:
+        if ele not in self.vertices:
+            self.vertices[ele] = Node(ele)
+        if self.vertices[ele].visited:
             return ele
-        self.graph[ele].visited = True
+        self.vertices[ele].visited = True
         nele = None
         if ele % 2 == 0:
             nele = int(ele / 2)
         else:
             nele = int(3 * ele + 1)
         self.visit(nele)
-        self.graph[ele].next_ele = self.graph[nele]
+        self.vertices[ele].next_ele = self.vertices[nele]
         return ele

@@ -6,8 +6,8 @@ def main():
     for i in range(1, 40):
         g.clear_nodes()
         g.visit(i)
-    print(g.graph.values())
-    print(len(g.graph))
+    print(g.vertices.values())
+    print(len(g.vertices))
 
 
 if __name__ == "__main__":
