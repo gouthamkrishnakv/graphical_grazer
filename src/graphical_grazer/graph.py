@@ -1,4 +1,4 @@
-from typing import Dict, Optional
+from typing import Dict
 
 from graphical_grazer.node import Node
 
