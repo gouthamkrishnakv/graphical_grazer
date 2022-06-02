@@ -6,6 +6,7 @@ authors = ["Goutham Krishna K V <gauthamkrishna9991@live.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
+matplotlib = "^3.5.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
