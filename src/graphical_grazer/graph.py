@@ -21,7 +21,9 @@ class Graph:
         `visit` Method
 
         This contains the special case where the elements were already created but 
-        cleared of visiting. This is useful in cases where one needs to iterate through
+        cleared of visiting.
+        
+        This is useful in cases where one needs to iterate through
         the graph again without regenerating the entire graph.
         """
         # "element is not created" situation
